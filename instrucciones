@@ -1,0 +1,20 @@
+**Para instalar REACT**:
+1. Nos ubicamos donde queremos crear el proyecto utilizando CD (Carpeta)
+2. Para crear el servidor se utiliza npm init vite@latest y se asigna el nombre al proyecto
+3. Seleccionamos el framework a utilizar (React) -> Javascript
+4. Ejecutamos la sentencia npm install para instalar en la carpeta todos los archivos.
+5. posteriormente para ejecutar el servidor ejecutamos npm run dev
+
+
+**Para Instalar Tailwind CSS (https://tailwindcss.com/docs/installation)**:
+1. Nos ubicamos en la carpeta del proyecto y ejecutamos la sentencia para instalar las 3 depedencias: 
+   npm i -D tailwindcss postcss autoprefixer 
+2. Creamos los archivos de configuracion (2) con la sentencia: npx tailwindcss init -p
+3. En nuestro archivo CSS que se encuentra en el main.jsx agregamos los 3 componentes:
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   No hay problema que muestre error, es normal al no ser propio de CSS.
+4. En el archivo tailwind.config.cjs en la seccion 'content' le decimos a que archivos le vamos agregar el
+   codigo CSS. Ejemplo: content: ["./index.html", "./src/**/*.jsx"] Para incluir todas las carpetas y 
+   todos los archivos jsx le agregamos './src/**/*.jsx' 
